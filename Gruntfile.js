@@ -22,8 +22,9 @@ module.exports = function(grunt) {
         eqnull: true,
         node: true,
         browser: true,
+        jquery: true,
         //strict: true,
-        predef: [ 'define', 'Mustache' , '_', '$', 'Backbone', 'Raphael']
+        predef: [ 'define', 'Mustache' , '_', 'Backbone', 'Raphael']
       }
     },
     watch: {
