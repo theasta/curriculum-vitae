@@ -1,0 +1,48 @@
+<form method="POST" class="form-horizontal">
+<fieldset>
+    <legend>Add a job</legend>
+    <div class="row">
+        <div class="control-group span6">
+            <label for="companyField" class="control-label">Company</label>
+            <div class="controls">
+                <input type="text" value="{{{ company }}}" name="company" id="companyField" class="span4"/>
+            </div>
+        </div>
+        <div class="control-group span6">
+            <label for="titleField" class="control-label">Title</label>
+            <div class="controls">
+                <input type="text" value="{{{ title }}}" name="title" id="titleField" class="span4"/>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="control-group span6">
+            <label for="startField" class="control-label">Start Date</label>
+            <div class="controls">
+                <input type="text" value="{{{ start }}}" name="start" id="startField"/>
+                <p class="help-block warning" style="display:none"></p>
+                <p class="help-block">Format : YYYY/MM/JJ</p>
+            </div>
+        </div>
+        <div class="control-group span6">
+            <label for="endField" class="control-label">End Date</label>
+            <div class="controls">
+                <input type="text" value="{{{ end }}}" name="end" id="endField"/>
+                <p class="help-block">Format : YYYY/MM/JJ</p>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="control-group span12">
+            <label for="descriptionField" class="control-label">Description</label>
+            <div class="controls">
+                <textarea id="descriptionField" name="description" class="span10">{{ description }}</textarea>
+            </div>
+        </div>
+    </div>
+    <div class="form-actions">
+        <button class="_cancel btn">Cancel</button>
+        <button class="_save btn btn-primary">Save</button>
+    </div>
+    </fieldset>
+</form>

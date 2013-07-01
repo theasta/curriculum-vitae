@@ -1,0 +1,21 @@
+<div class="row">
+    <h2 class="span8">{{ company }}</h2>
+    <h4 class="span4">{{ start }}-{{ end }}</h4>
+</div>
+<h3>{{ title }}</h3>
+{{#description}}
+<p>{{ description }}</p>
+{{/description}}
+{{^description}}
+<p><em>No description :(</em></p>
+{{/description}}
+<div class="actions">
+    <button class="_delete btn btn-danger">
+        <i class="icon-trash icon-white"></i>
+        Delete
+    </button>
+    <button class="_edit btn btn-inverse">
+        <i class="icon-edit icon-white"></i>
+        Edit
+    </button>
+</div>

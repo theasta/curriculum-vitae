@@ -1,0 +1,23 @@
+{
+  "name": "curriculum-vitae",
+  "description": "A resume app",
+  "version": "0.0.1",
+  "author": {
+    "name": "Alexandrine Boissière",
+    "email": "theasta@gmail.com"
+  },
+  "private": true,
+  "scripts": {
+    "start": "node server"
+  },
+  "dependencies": {
+    "express": "3.0.3",
+    "h4e": "~0.3.0",
+    "mongodb": "~1.2.11"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-jshint": "~0.6.0",
+    "grunt-contrib-watch": "~0.4.4"
+  }
+}

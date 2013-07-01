@@ -1,0 +1,21 @@
+# Folder view configuration files
+.DS_Store
+Desktop.ini
+
+# Thumbnail cache files
+._*
+Thumbs.db
+
+# npm files
+npm-debug.log
+node_modules
+
+# IDE configuration files
+.idea
+
+# Tmp folders
+tmp/**
+.grunt
+
+# Subversion folders
+.svn
