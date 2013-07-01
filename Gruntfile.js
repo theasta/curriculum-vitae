@@ -28,8 +28,18 @@ module.exports = function(grunt) {
       }
     },
     watch: {
-      files: ['<%= jshint.gruntfile %>', '<%= jshint.frontend %>', '<%= jshint.backend %>' ],
-      tasks: ['jshint']
+      jshint_frontend: {
+        files: ['<%= jshint.frontend %>'],
+        tasks: ['jshint:frontend']
+      },
+      jshint_backend: {
+        files: ['<%= jshint.backend %>'],
+        tasks: ['jshint:backend']
+      },
+      jshint_gruntfile: {
+        files: [ '<%= jshint.gruntfile %>' ],
+        tasks: ['jshint:gruntfile']
+      }
     }
   });
 
