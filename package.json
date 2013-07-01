@@ -6,6 +6,10 @@
     "name": "Alexandrine Boissière",
     "email": "theasta@gmail.com"
   },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/theasta/curriculum-vitae.git"
+  },
   "private": true,
   "scripts": {
     "start": "node server"
