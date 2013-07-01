@@ -9,22 +9,7 @@ module.exports = function(grunt) {
       backend: ['**/*.js', '!public/**/*.js', '!node_modules/**/*.js', '!Gruntfile.js'],
       frontend: ['public/scripts/**/*.js', '!public/scripts/vendor/**/*.js'],
       options: {
-        curly: true,
-        eqeqeq: false,
-        immed: true,
-        latedef: true,
-        newcap: true,
-        noarg: true,
-        sub: true,
-        undef: true,
-        unused: false,
-        boss: true,
-        eqnull: true,
-        node: true,
-        browser: true,
-        jquery: true,
-        //strict: true,
-        predef: [ 'define', 'Mustache' , '_', 'Backbone', 'Raphael']
+        jshintrc: '.jshintrc'
       }
     },
     watch: {
